@@ -1,0 +1,38 @@
+{
+  "name": "apollo_pos_backend",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info --port 5005 src/app.js",
+    "dev": "fastify start -w -l info --port 5005 src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.0.0",
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/sensible": "^5.0.0",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "dotenv": "^16.1.4",
+    "fastify": "^4.0.0",
+    "fastify-cli": "^5.7.0",
+    "fastify-multipart": "^5.4.0",
+    "fastify-plugin": "^4.0.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1",
+    "raw-body": "^2.5.2"
+  },
+  "devDependencies": {
+    "tap": "^16.1.0"
+  }
+}
